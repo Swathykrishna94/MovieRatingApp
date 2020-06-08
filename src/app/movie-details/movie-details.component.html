@@ -1,0 +1,42 @@
+<div class="card">
+<div class="list-wrapper" *ngIf="showMovieDetails">
+  <img src="{{imgBasePath}}{{movieDetails.poster_path}}" class="movie-image">
+  <div>
+    <table>
+      <tr>
+        <td>
+          Name:
+        </td>
+        <td>
+          {{movieDetails.title}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Language:
+        </td>
+        <td>
+          {{movieDetails.original_language}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Rating:
+        </td>
+        <td>
+          {{movieDetails.vote_average}}
+        </td>
+      </tr>
+
+    </table>
+    <div class="rating-wrapper">
+<!--      <select>-->
+<!--        <option value = "" disabled selected>Select your rating</option>-->
+<!--        <option *ngFor="let ratingValue of ratingValues" value="rating">{{ratingValue}}</option>-->
+<!--      </select>-->
+      <input type="number" id="ratings" [(ngModel)]="rating" name="ratings" step="0.5" placeholder="Provide your rating">
+      <div class="btn btn-danger custom-btn" type="button "(click)="submitRating()">Rate this movie</div>
+    </div>
+  </div>
+</div>
+</div>

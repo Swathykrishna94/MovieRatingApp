@@ -1,0 +1,32 @@
+.card {
+  background-color: white;
+  margin: 50px;
+  padding: 20px;
+  height: 80%;
+}
+.list-wrapper {
+  height: 100%;
+  display: inline-flex;
+}
+.movie-image {
+  width: 40%;
+  height: 100%;
+}
+table {
+  padding-left: 3rem;
+  border-collapse: unset;
+}
+tr {
+  vertical-align: baseline;
+  font-size: larger;
+}
+td {
+  text-overflow: ellipsis;
+}
+.rating-wrapper {
+  padding-left: 3rem;
+  display: flex;
+}
+.custom-btn {
+  margin-left: 0.5rem;
+}

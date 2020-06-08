@@ -1,0 +1,25 @@
+<div class="cards">
+  <div *ngFor="let movie of movieList" class="card">
+    <div class="list-wrapper" (click)="goToDetails(movie.id)">
+      <img src="{{imgBasePath}}{{movie.poster_path}}" class="movie-image">
+      <table>
+        <tr>
+          <td>
+            Name:
+          </td>
+          <td>
+            {{movie.title}}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Rating:
+          </td>
+          <td>
+            {{movie.vote_average}}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
